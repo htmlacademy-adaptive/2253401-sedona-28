@@ -8,14 +8,13 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo-header.svg" width="185" height="96"
-        alt="Логотип города Седона">
+    <a class="main-header__logo logo" href="index.html">
+      <img class="logo__image" src="img/logo-header.svg" width="185" height="96" alt="Логотип города Седона">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">
               Главная
@@ -27,7 +26,7 @@
             </a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <a>
+            <a href="form.html" aria-current="page">
               Форма отзыва
             </a>
           </li>
@@ -40,18 +39,19 @@
       </div>
     </nav>
   </header>
-  <main class="form-container">
-    <h1 class="visually-hidden">Страница форма отзыва.</h1>
-    <div class="catalog-welcome">
+  <main class="main-container">
+    <section class="catalog-welcome">
+      <h1 class="visually-hidden">Страница форма отзыва.</h1>
       <div class="catalog-welcome__wrapper">
         <img class="catalog-welcome__image" src="img/catalog-welcome.svg" width="282" height="214"
           alt="Название города Седона.">
       </div>
-    </div>
+    </section>
     <section class="form-intro">
-      <div class="form__wrapper">
-        <h2 class="form__title">Оставьте свой отзыв</h2>
-        <p class="form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+      <div class="form-intro__wrapper">
+        <h2 class="form-intro__title">Оставьте свой отзыв</h2>
+        <p class="form-intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
+          вами
           достопримечательностях</p>
       </div>
     </section>
@@ -62,12 +62,12 @@
           <legend class="form-review__title">Представьтесь:</legend>
           <ul class="form-review__list">
             <li class="form-review__item">
-              <label class="form-review__label" for="name">Имя<sup>*</sup>:</label>
-              <input class="form-review__input" type="text" id="name" name="name" placeholder="Пётр">
+              <label class="form-review__label" for="name">Имя<span>*</span>:</label>
+              <input class="form-review__input" type="text" id="name" name="first-name" placeholder="Пётр" required>
             </li>
             <li class="form-review__item">
-              <label class="form-review__label" for="surname">Фамилия<sup>*</sup>:</label>
-              <input class="form-review__input" type="text" id="surname" name="surname" placeholder="Пустота">
+              <label class="form-review__label" for="surname">Фамилия<span>*</span>:</label>
+              <input class="form-review__input" type="text" id="surname" name="surname" placeholder="Пустота" required>
             </li>
             <li class="form-review__item">
               <label class="form-review__label" for="patronymic">Отчество:</label>
@@ -79,16 +79,18 @@
           <legend class="form-review__title">Контактная информация:</legend>
           <ul class="form-review__list">
             <li class="form-review__item">
-              <label class="form-review__label" for="phone">Контактный телефон<sup>*</sup>:</label>
+              <label class="form-review__label" for="phone">Контактный телефон<span>*</span>:</label>
               <div class="form-review__phone">
-                <input class="form-review__input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+                <input class="form-review__input" type="tel" id="phone" name="phone" placeholder="Введите телефон"
+                  required>
                 <!-- Здесь будет иконка-->
               </div>
             </li>
             <li class="form-review__item">
-              <label class="form-review__label" for="email">Электронная почта<sup>*</sup>:</label>
+              <label class="form-review__label" for="email">Электронная почта<span>*</span>:</label>
               <div class="form-review__email">
-                <input class="form-review__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+                <input class="form-review__input" type="email" id="email" name="email" placeholder="Введите e-mail"
+                  required>
                 <!-- Здесь будет иконка-->
               </div>
             </li>
@@ -99,20 +101,20 @@
           <ul class="form-review__list">
             <li class="form-review__item form-review__item-radio">
               <label class="form-review__label">
-                <input class="input__radio" type="radio" name="general-impression" value="positive" checked>
-                <span class="input__label">Скорее положительное</span>
+                <input class="form-review__radio" type="radio" name="general-impression" value="positive" checked>
+                <span class="form-review__text">Скорее положительное</span>
               </label>
             </li>
             <li class="form-review__item form-review__item-radio">
               <label class="form-review__label">
-                <input class="input__radio" type="radio" name="general-impression" value="negative">
-                <span class="input__label">Скорее отрицательное</span>
+                <input class="form-review__radio" type="radio" name="general-impression" value="negative">
+                <span class="form-review__text">Скорее отрицательное</span>
               </label>
             </li>
             <li class="form-review__item form-review__item-radio">
               <label class="form-review__label">
-                <input class="input__radio" type="radio" name="general-impression" value="Difficult-to-answer">
-                <span class="input__label">Затрудняюсь ответить</span>
+                <input class="form-review__radio" type="radio" name="general-impression" value="Difficult-to-answer">
+                <span class="form-review__text">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
@@ -122,69 +124,72 @@
           <ul class="form-review__list">
             <li class="form-review__item form-review__item-checkbox">
               <label class="form-review__label">
-                <input class="input__checkbox" type="checkbox" name="devils-bridge" checked>
-                <span class="input__label">Мост дьявола</span>
+                <input class="form-review__checkbox" type="checkbox" name="devils-bridge" checked>
+                <span class="form-review__text">Мост дьявола</span>
               </label>
             </li>
             <li class="form-review__item form-review__item-checkbox">
               <label class="form-review__label">
-                <input class="input__checkbox" type="checkbox" name="bell-mountain" checked>
-                <span class="input__label">Гора-Колокол</span>
+                <input class="form-review__checkbox" type="checkbox" name="bell-mountain" checked>
+                <span class="form-review__text">Гора-Колокол</span>
               </label>
             </li>
             <li class="form-review__item form-review__item-checkbox">
               <label class="form-review__label">
-                <input class="input__checkbox" type="checkbox" name="slide-park" checked>
-                <span class="input__label">Слайд-парк</span>
+                <input class="form-review__checkbox" type="checkbox" name="slide-park" checked>
+                <span class="form-review__text">Слайд-парк</span>
               </label>
             </li>
             <li class="form-review__item form-review__item-checkbox">
               <label class="form-review__label">
-                <input class="input__checkbox" type="checkbox" name="red-rocks">
-                <span class="input__label">Красные скалы</span>
+                <input class="form-review__checkbox" type="checkbox" name="red-rocks">
+                <span class="form-review__text">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form-review__group field">
           <legend class="form-review__title">Опишите свои эмоции:</legend>
-          <textarea class="form-review__text" name="review" placeholder="Опишите подробно все свои восторги"></textarea>
+          <label class="form-review__textarea-label" for="review">
+            <textarea class="form-review__textarea" name="review" id="review"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
         </fieldset>
-        <div class="riview__button">
-          <a class="review__post button" href="#">Отправить отзыв</a>
-          <p class="review__attention"><sup>*</sup> — обязательные поля</p>
+        <div class="review-post">
+          <button class="review-post__button" type="submit">Отправить отзыв</button>
+          <p class="review-post__attention"><span>*</span> — обязательные поля</p>
         </div>
       </form>
     </section>
   </main>
-  <footer class="main-footer form-footer">
-    <div class="footer__wrapper">
-      <div class="footer__hashtag hashtag">
-        <p>#VisitSedona</p>
-      </div>
-      <div class="footer__social social">
-        <h2 class="visually-hidden">Социальные сети.</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
-            <span class="visually-hidden">ВКонтакте.</span>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
-            <span class="visually-hidden">Телеграм.</span>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-            <span class="visually-hidden">Ютуб.</span>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
-        <span class="visually-hidden">Логотип HTML Academy.</span>
-      </div>
+  <footer class="footer">
+    <div class="footer__hashtag hashtag">
+      <p>#VisitSedona</p>
     </div>
+    <section class="footer__social social">
+      <h2 class="visually-hidden">Социальные сети.</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          <span class="visually-hidden">ВКонтакте.</span>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+          <span class="visually-hidden">Телеграм.</span>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+          <span class="visually-hidden">Ютуб.</span>
+        </li>
+      </ul>
+    </section>
+    <p class="footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Логотип HTML Academy.</span>
+        <!--Будет свг-->
+      </a>
+    </p>
   </footer>
   <div class="modal-container modal-container--close">
     <div class="modal-container__warning modal">

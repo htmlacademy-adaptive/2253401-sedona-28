@@ -3,10 +3,14 @@
   justify-content: center;
   align-items: center;
   min-width: 320px;
+  height: 389px;
   color: @black;
   background-color: #3287d1;
-  background-image: url("../../img/index-background.jpg");
-  background-repeat: no-repeat;
+  background-image: url(../../img/svg/welcome-triangle.svg), url("../../img/index-background.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, top center;
+  object-fit: cover;
 }
 
 .main-welcome__wrapper {

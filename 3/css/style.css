@@ -2,14 +2,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../../fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
   font-display: swap;
 }
 html {
@@ -298,7 +298,7 @@ html {
   text-align: center;
 }
 .form-intro__title {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 700;
@@ -332,6 +332,25 @@ html {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.form-review__input {
+  width: 280px;
+  background-color: #EEEEEE;
+  border: none;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+}
+.form-review__input::placeholder {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.form-review__input--phone {
+  height: 58px;
 }
 .form-review__textarea {
   border: none;
@@ -372,36 +391,8 @@ html {
   font-size: 14px;
   line-height: 21px;
 }
-.fieldset__input {
-  width: 280px;
-  background-color: #EEEEEE;
-  border: none;
-  font-weight: 700;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 26px;
-}
-::placeholder {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
 .fieldset--phone {
   padding-bottom: 37px;
-}
-.fieldset__inputne {
-  width: 280px;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  border: none;
-  background-color: #EEEEEE;
-}
-.fieldset__input--phone {
-  height: 58px;
 }
 .fieldset--impression {
   padding-bottom: 37px;

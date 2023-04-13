@@ -199,7 +199,7 @@ html {
 .catalog-welcome {
   color: #ffffff;
   background-color: #81B3D2;
-  background-image: url("../../img/svg/welcome-triangle.svg"), url("../../img/catalog-background.jpg");
+  background-image: url("../img/svg/welcome-triangle.svg"), url("../img/catalog-background.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, top center;

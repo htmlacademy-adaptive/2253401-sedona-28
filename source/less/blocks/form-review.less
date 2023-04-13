@@ -11,12 +11,19 @@
   border: none;
 }
 
-//.form-review__item {
-  display: grid;
-  grid-template-columns: 280px;
-  grid-template-rows: 21px 58px;
-//}
+.form-review__list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
 
+.form-review__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
 .form-review__textarea {
   border: none;
@@ -24,6 +31,10 @@
   margin: 0;
   padding: 0;
   line-height: 0;
+}
+
+.feedback__textarea {
+  background-color: @grey;
 }
 
 .form-review__post {

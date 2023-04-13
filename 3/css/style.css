@@ -50,7 +50,7 @@ html {
   height: 389px;
   color: #000000;
   background-color: #3287d1;
-  background-image: url("/2253401-sedona-28/source/img/svg/welcome-triangle.svg"), url("/2253401-sedona-28/source/img/index-background.jpg");
+  background-image: url("../img/svg/welcome-triangle.svg"), url("../img/index-background.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, top center;
@@ -199,7 +199,7 @@ html {
 .catalog-welcome {
   color: #ffffff;
   background-color: #81B3D2;
-  background-image: url("/2253401-sedona-28/source/img/svg/welcome-triangle.svg"), url("/2253401-sedona-28/source/img/index-background.jpg");
+  background-image: url("../img/svg/welcome-triangle.svg"), url("../img/index-background.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, top center;

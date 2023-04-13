@@ -25,6 +25,26 @@
   gap: 16px;
 }
 
+.form-review__input {
+  width: 280px;
+  background-color: @grey;
+  border: none;
+  font-weight: 700;
+  font-family: inherit;
+  .text-size(18px, 26px);
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 700;
+    .text-size(18px, 26px);
+    color: @black;
+  }
+}
+
+.form-review__input--phone {
+  height: 58px;
+}
+
 .form-review__textarea {
   border: none;
   width: 100%;

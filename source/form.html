@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
       <img class="logo__image" src="img/logo-header.svg" width="185" height="96" alt="Логотип города Седона">
@@ -58,106 +59,106 @@
     <section class="form">
       <h2 class="visually-hidden">Форма отзыва.</h2>
       <form class="form-review" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form-review__group field">
-          <legend class="form-review__title">Представьтесь:</legend>
-          <ul class="form-review__list">
-            <li class="form-review__item">
-              <label class="form-review__label" for="name">Имя<span>*</span>:</label>
+        <fieldset class="form-review__group fieldset">
+          <legend class="fieldset__title">Представьтесь:</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__label" for="name">Имя<span>*</span>:</label>
               <input class="form-review__input" type="text" id="name" name="first-name" placeholder="Пётр" required>
             </li>
-            <li class="form-review__item">
-              <label class="form-review__label" for="surname">Фамилия<span>*</span>:</label>
+            <li class="fieldset__item">
+              <label class="fieldset__label" for="surname">Фамилия<span>*</span>:</label>
               <input class="form-review__input" type="text" id="surname" name="surname" placeholder="Пустота" required>
             </li>
-            <li class="form-review__item">
-              <label class="form-review__label" for="patronymic">Отчество:</label>
+            <li class="fieldset__item">
+              <label class="fieldset__label" for="patronymic">Отчество:</label>
               <input class="form-review__input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-review__group field">
-          <legend class="form-review__title">Контактная информация:</legend>
-          <ul class="form-review__list">
-            <li class="form-review__item">
-              <label class="form-review__label" for="phone">Контактный телефон<span>*</span>:</label>
-              <div class="form-review__phone">
-                <input class="form-review__input" type="tel" id="phone" name="phone" placeholder="Введите телефон"
+        <fieldset class="form-review__group fieldset fieldset--phone">
+          <legend class="fieldset__title">Контактная информация:</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item form-review__item">
+              <label class="fieldset__label" for="phone">Контактный телефон<span>*</span>:</label>
+              <div class="fieldset__phone">
+                <input class="form-review__input form-review__input--phone" type="tel" id="phone" name="phone" placeholder="Введите телефон"
                   required>
                 <!-- Здесь будет иконка-->
               </div>
             </li>
-            <li class="form-review__item">
-              <label class="form-review__label" for="email">Электронная почта<span>*</span>:</label>
-              <div class="form-review__email">
-                <input class="form-review__input" type="email" id="email" name="email" placeholder="Введите e-mail"
+            <li class="fieldset__item form-review__item">
+              <label class="fieldset__label" for="email">Электронная почта<span>*</span>:</label>
+              <div class="fieldset__email">
+                <input class="form-review__input fform-review__input--phone" type="email" id="email" name="email" placeholder="Введите e-mail"
                   required>
                 <!-- Здесь будет иконка-->
               </div>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-review__group field">
-          <legend class="form-review__title">Ваше общее впечатление:</legend>
-          <ul class="form-review__list">
-            <li class="form-review__item form-review__item-radio">
-              <label class="form-review__label">
-                <input class="form-review__radio" type="radio" name="general-impression" value="positive" checked>
-                <span class="form-review__text">Скорее положительное</span>
+        <fieldset class="form-review__group fieldset fieldset--impression">
+          <legend class="fieldset__title fieldset__title--radio">Ваше общее впечатление:</legend>
+          <ul class="form-review__list fieldset__list fieldset__list--impression">
+            <li class="form-review__item fieldset__item-radio">
+              <label class="fieldset__label radio">
+                <input class="radio__input" type="radio" name="general-impression" value="positive" checked>
+                <span class="radio__text">Скорее положительное</span>
               </label>
             </li>
-            <li class="form-review__item form-review__item-radio">
-              <label class="form-review__label">
-                <input class="form-review__radio" type="radio" name="general-impression" value="negative">
-                <span class="form-review__text">Скорее отрицательное</span>
+            <li class="form-review__item fieldset__item-radio">
+              <label class="fieldset__label radio">
+                <input class="radio__input" type="radio" name="general-impression" value="negative">
+                <span class="radio__text">Скорее отрицательное</span>
               </label>
             </li>
-            <li class="form-review__item form-review__item-radio">
-              <label class="form-review__label">
-                <input class="form-review__radio" type="radio" name="general-impression" value="Difficult-to-answer">
-                <span class="form-review__text">Затрудняюсь ответить</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form-review__group field">
-          <legend class="form-review__title">Посещенные достопримечательности:</legend>
-          <ul class="form-review__list">
-            <li class="form-review__item form-review__item-checkbox">
-              <label class="form-review__label">
-                <input class="form-review__checkbox" type="checkbox" name="devils-bridge" checked>
-                <span class="form-review__text">Мост дьявола</span>
-              </label>
-            </li>
-            <li class="form-review__item form-review__item-checkbox">
-              <label class="form-review__label">
-                <input class="form-review__checkbox" type="checkbox" name="bell-mountain" checked>
-                <span class="form-review__text">Гора-Колокол</span>
-              </label>
-            </li>
-            <li class="form-review__item form-review__item-checkbox">
-              <label class="form-review__label">
-                <input class="form-review__checkbox" type="checkbox" name="slide-park" checked>
-                <span class="form-review__text">Слайд-парк</span>
-              </label>
-            </li>
-            <li class="form-review__item form-review__item-checkbox">
-              <label class="form-review__label">
-                <input class="form-review__checkbox" type="checkbox" name="red-rocks">
-                <span class="form-review__text">Красные скалы</span>
+            <li class="form-review__item fieldset__item-radio">
+              <label class="fieldset__label radio">
+                <input class="radio__input" type="radio" name="general-impression" value="Difficult-to-answer">
+                <span class="radio__text">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-review__group field">
-          <legend class="form-review__title">Опишите свои эмоции:</legend>
-          <label class="form-review__textarea-label" for="review">
-            <textarea class="form-review__textarea" name="review" id="review"
+        <fieldset class="form-review__group fieldset fieldset--impression">
+          <legend class="fieldset__title fieldset__title--checkbox">Посещенные достопримечательности:</legend>
+          <ul class="fieldset__list fieldset__list--showplace">
+            <li class="fieldset__item fieldset__item-checkbox">
+              <label class="fieldset__label checkbox">
+                <input class="checkbox__input" type="checkbox" name="devils-bridge" checked>
+                <span class="checkbox__text">Мост дьявола</span>
+              </label>
+            </li>
+            <li class="fieldset__item fieldset__item-checkbox">
+              <label class="fieldset__label checkbox">
+                <input class="checkbox__input" type="checkbox" name="bell-mountain" checked>
+                <span class="checkbox__text">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="fieldset__item fieldset__item-checkbox">
+              <label class="fieldset__label checkbox">
+                <input class="checkbox__input" type="checkbox" name="slide-park" checked>
+                <span class="checkbox__text">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="fieldset__item fieldset__item-checkbox">
+              <label class="fieldset__label checkbox">
+                <input class="checkbox__input" type="checkbox" name="red-rocks">
+                <span class="checkbox__text">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-review__textarea feedback">
+          <legend class="feedback__title">Опишите свои эмоции:</legend>
+          <label class="feedback__textarea-label" for="review">
+            <textarea class="feedback__textarea" name="review" id="review"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
         </fieldset>
-        <div class="review-post">
-          <button class="review-post__button" type="submit">Отправить отзыв</button>
-          <p class="review-post__attention"><span>*</span> — обязательные поля</p>
+        <div class="form-review__post comment">
+          <button class="comment__button" type="submit">Отправить отзыв</button>
+          <p class="comment__attention"><span>*</span> — обязательные поля</p>
         </div>
       </form>
     </section>

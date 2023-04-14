@@ -1,0 +1,62 @@
+.form-review {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+.form-review__group {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  border: none;
+}
+
+.form-review__list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.form-review__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-review__input {
+  width: 280px;
+  background-color: @grey;
+  border: none;
+  font-weight: 700;
+  font-family: inherit;
+  .text-size(18px, 26px);
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 700;
+    .text-size(18px, 26px);
+    color: @black;
+  }
+}
+
+.form-review__input--phone {
+  height: 58px;
+}
+
+.form-review__textarea {
+  border: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.feedback__textarea {
+  background-color: @grey;
+}
+
+.form-review__post {
+  text-align: right;
+}

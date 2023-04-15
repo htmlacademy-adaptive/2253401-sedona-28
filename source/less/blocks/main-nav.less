@@ -1,7 +1,18 @@
 .main-nav {
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+  }
+}
+
+.main-nav__wrapper {
   width: 100%;
 }
 
@@ -20,14 +31,4 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
-  list-style: none;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 1px;
-  }
 }
-

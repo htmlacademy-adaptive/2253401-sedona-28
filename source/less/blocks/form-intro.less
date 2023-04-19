@@ -1,5 +1,14 @@
 .form-intro__wrapper {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 436px;
+    padding: 64px 166px 108px;
+
+    @media (min-width: @desktop-width) {
+      padding: 115px 382px 68px;
+    }
+  }
 }
 
 .form-intro__title {
@@ -11,7 +20,8 @@
 }
 
 .form-intro__description {
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: 400;
-  margin-bottom: 28px;
 }

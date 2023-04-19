@@ -2,6 +2,20 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 64px;
+
+    @media (min-width: @desktop-width) {
+      padding-left: 120px;
+      padding-right: 120px;
+      padding-bottom: 0;
+    }
+  }
 }
 
 .form-review__group {
@@ -9,6 +23,44 @@
   padding: 0;
   padding-bottom: 40px;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+  }
+}
+
+.form-review__group:not(:first-child) {
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 34px;
+  }
+}
+
+.form-review__group:nth-child(4) {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 55px;
+  }
+}
+
+.form-review__group:first-child {
+  @media (min-width: @tablet-width) {
+    padding-right: 43px;
+    margin-right: 44px;
+    margin-bottom: 48px;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 63px;
+    margin-right: 64px;
+    padding-bottom: 0;
+    margin-bottom: 69px;
+  }
 }
 
 .form-review__list {
@@ -27,22 +79,27 @@
 
 .form-review__input {
   width: 280px;
+  padding: 16px 16px 16px 16px;
   background-color: @grey;
   border: none;
   font-weight: 700;
   font-family: inherit;
   .text-size(18px, 26px);
 
-  &::placeholder {
-    font-style: normal;
-    font-weight: 700;
-    .text-size(18px, 26px);
-    color: @black;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 17px;
   }
-}
 
-.form-review__input--phone {
-  height: 58px;
+  @media (min-width: @desktop-width) {
+    width: 430px;
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 700;
+      .text-size(18px, 26px);
+      color: @black;
+    }
+  }
 }
 
 .form-review__textarea {

@@ -1,19 +1,21 @@
 .page-body {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  min-height: 100%;
-  margin: 0 auto;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
   font-family: @fonts;
-  .text-size (14px, 21px);
+  .text-size (14px, 1.5);
   text-transform: uppercase;
   color: @black;
+  font-style: normal;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    // width: 768px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    margin: 0 auto;
+    background-color: @light-grey;
+    box-shadow: 0 0 15px fade(#000000, 30%);
   }
 }

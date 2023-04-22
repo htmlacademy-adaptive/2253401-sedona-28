@@ -1,27 +1,20 @@
 .form-review {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 50px;
+  padding: 0 20px 50px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 64px;
+    padding: 0 60px 64px;
+  }
 
-    @media (min-width: @desktop-width) {
-      padding-left: 120px;
-      padding-right: 120px;
-      padding-bottom: 0;
-    }
+  @media (min-width: @desktop-width) {
+    padding: 0 120px 0;
   }
 }
 
 .form-review__group {
   margin: 0;
-  padding: 0;
-  padding-bottom: 40px;
+  padding: 0 0 40px;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -49,15 +42,13 @@
 
 .form-review__group:first-child {
   @media (min-width: @tablet-width) {
-    margin-right: 44px;
-    margin-bottom: 48px;
+    margin: 0 64px 63px 0;
     padding-bottom: 13px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 64px;
+    margin: 0 64px 63px 0;
     padding-bottom: 0;
-    margin-bottom: 63px;
   }
 }
 
@@ -81,7 +72,7 @@
   border: none;
   font-weight: 700;
   font-family: inherit;
-  .text-size(18px, 26px);
+  font-size: 18px;
 
   @media (min-width: @tablet-width) {
     width: 263px;
@@ -90,13 +81,12 @@
 
   @media (min-width: @desktop-width) {
     width: 398px;
+  }
 
-    &::placeholder {
-      font-style: normal;
-      font-weight: 700;
-      .text-size(18px, 26px);
-      color: @black;
-    }
+  &::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    color: fade(@black, 30%);
   }
 }
 

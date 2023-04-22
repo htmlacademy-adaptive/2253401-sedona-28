@@ -3,10 +3,6 @@
 
   @media (min-width: @tablet-width) {
     list-style: none;
-
-    @media (min-width: @desktop-width) {
-      list-style: none;
-    }
   }
 }
 
@@ -15,23 +11,17 @@
 }
 
 .booking__title {
-  margin: 0;
-  padding-bottom: 30px;
-  font-style: normal;
+  margin: 0 0 30px;
   font-weight: 700;
-  .text-size(21px, 26px);
+  font-size: 21px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 38px;
-
-    @media (min-width: @desktop-width) {
-      list-style: none;
-    }
+    margin: 0 0 38px;
   }
 }
 
+
 .booking__description {
-  font-style: normal;
   font-weight: 400;
 }
 
@@ -42,10 +32,10 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 95px;
     // в padding-bottom убрать ширину кнопки
+  }
 
-    @media (min-width: @desktop-width) {
-      padding-bottom: 108px;
-      // в padding-bottom убрать ширину кнопки
-    }
+  @media (min-width: @desktop-width) {
+    padding-bottom: 108px;
+    // в padding-bottom убрать ширину кнопки
   }
 }

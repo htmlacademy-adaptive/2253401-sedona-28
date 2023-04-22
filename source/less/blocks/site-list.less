@@ -1,13 +1,13 @@
 .site-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
+    background-color: transparent;
   }
 
   @media (min-width: @desktop-width) {
@@ -18,4 +18,5 @@
 .site-list__item {
   padding-top: 17px;
   text-align: center;
+  background-color: @blue;
 }

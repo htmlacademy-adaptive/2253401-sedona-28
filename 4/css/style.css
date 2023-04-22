@@ -490,6 +490,11 @@ html {
   text-align: center;
   background-color: #81B3D2;
 }
+@media (min-width: 768px) {
+  .site-list__item {
+    background-color: #ffffff;
+  }
+}
 .catalog-welcome {
   margin-bottom: 36px;
 }

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -12,10 +13,9 @@
     <a class="main-header__logo logo">
       <img class="logo__image" src="img/logo-header.svg" width="185" height="96" alt="Логотип города Седона">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--opened">
       <button class="main-nav__toggle toggle" type="button"><span class="visually-hidden">Открыть меню/Закрыть
           меню.</span></button>
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
             <a href="index.html" aria-current="page">
@@ -38,7 +38,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
 
@@ -58,7 +57,7 @@
         <p class="advantages__intro">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
       <ol class="advantages__list">
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--background">
           <div class="advantages__division advantages__division--background">
             <h3 class="advantages__title advantages__title--subtitle">Настоящий городок</h3>
             <!--вставить cётчик через css counter-reset-->
@@ -66,7 +65,7 @@
               там течёт своя жизнь</p>
           </div>
           <div class="advantages__image">
-            <img class="advantages__picture" src="img/house-advantages.jpg" width="520" height="260"
+            <img class="advantages__picture" src="img/house-advantages.jpg" width="320" height="260"
               alt="Вид на здания в городе Седона.">
           </div>
           <div class="services">
@@ -89,7 +88,7 @@
             </div>
           </div>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--background">
           <div class="advantages__division advantages__division--background">
             <h3 class="advantages__title advantages__title--subtitle">Там есть<br> мост дьявола</h3>
             <!--вставить cётчик через css counter-reset-->
@@ -97,27 +96,27 @@
               осмелитесь, разумеется</p>
           </div>
           <div class="advantages__image">
-            <img class="advantages__picture" src="img/mountain-advantages.jpg" width="520" height="260"
+            <img class="advantages__picture" src="img/mountain-advantages.jpg" width="320" height="260"
               alt="Вид на здания в городе Седона.">
           </div>
         </li>
         <li class="advantages__item">
           <div class="advantages__division">
-            <h3 class="advantages__title">Небольшая площадь</h3>
+            <h3 class="advantages__title">Небольшая<br> площадь</h3>
             <!--вставить cётчик через css counter-reset-->
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="advantages__item">
           <div class="advantages__division">
-            <h3 class="advantages__title">Красивая дорога</h3>
+            <h3 class="advantages__title">Красивая<br> дорога</h3>
             <!--вставить cётчик через css counter-reset-->
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="advantages__item">
           <div class="advantages__division">
-            <h3 class="advantages__title">Мало туристов</h3>
+            <h3 class="advantages__title">Мало<br> туристов</h3>
             <!--вставить cётчик через css counter-reset-->
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>

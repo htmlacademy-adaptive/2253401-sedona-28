@@ -6,11 +6,17 @@
   height: 389px;
   color: @black;
   background-color: #3287d1;
-  background-image: url("../img/svg/welcome-triangle.svg"), url("../img/index-background.jpg");
-  background-size: 100% auto, cover;
+  background-image: url("../img/svg/intro-triangle.svg"), url("../img/index-background.jpg");
+  background-size: 200% auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, top center;
   object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+    background-size: 100% auto, cover;
+    object-fit: fill;
+  }
 }
 
 .main-welcome__wrapper {
@@ -22,4 +28,9 @@
   margin: 0 auto;
   min-width: 282px;
   min-height: 214px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 461px;
+    min-height: 350px;
+  }
 }

@@ -1,18 +1,41 @@
 .booking {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    list-style: none;
+  }
 }
 
 .booking__wrapper {
-  margin-bottom: 32px;
+  padding: 38px 29px 32px;
 }
 
 .booking__title {
-  font-style: normal;
+  margin: 0 0 30px;
   font-weight: 700;
-  .text-size(21px, 26px);
+  font-size: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 38px;
+  }
 }
 
+
 .booking__description {
-  font-style: normal;
   font-weight: 400;
+}
+
+.booking__search-hotel {
+  padding-bottom: 89px;
+  // в padding-bottom убрать ширину кнопки
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 95px;
+    // в padding-bottom убрать ширину кнопки
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 108px;
+    // в padding-bottom убрать ширину кнопки
+  }
 }

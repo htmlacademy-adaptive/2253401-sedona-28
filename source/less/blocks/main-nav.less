@@ -3,6 +3,8 @@
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
+  min-height: 56px;
+  background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
     min-width: 768px;
@@ -13,19 +15,26 @@
   }
 }
 
-//.main-nav__wrapper {
-// width: 100%;
-//}
-
 .main-nav__toggle {
   position: absolute;
+  right: 20px;
+  top: 17px;
+  z-index: 2;
+  display: block;
   width: 23px;
   height: 22px;
-  display: block;
+  padding: 0;
+  font-size: 0;
+  background-color: #81b3d2;
   border: none;
-  cursor: pointer;
-  z-index: 2;
-  background-color: #ffffff;
+
+  &:hover {
+    background-color: fade(#81b3d2, 60%);
+  }
+
+  &:active {
+    background-color: fade(#81b3d2, 30%);
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -36,31 +45,20 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
+.main-nav--opened .main-nav__toggle::before {
   content: "";
   position: absolute;
+  right: 0;
+  top: 4px;
   width: 23px;
-  height: 4px;
-  background-color: #ff0000;
-  top: 17px;
+  height: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 9px 0 0 #ffffff, 0 18px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle {
   right: 20px;
-  box-shadow: 0 9px 0 0 @blue, 0 18px 0 0 @blue;
-}
-
-.main-nav--closed .main-nav__toggle:hover::before {
-  background-color: fade(@blue, 70%);
-  box-shadow: 0 9px 0 0 fade(@blue, 70%), 0 18px 0 0 fade(@blue, 70%);
-}
-
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(@blue, 50%);
-  box-shadow: 0 9px 0 0 fade(@blue, 50%), 0 18px 0 0 fade(@blue, 50%);
-}
-
-.main-nav--opened .main-nav__toggle {
   top: 17px;
-  right: 28px;
-  left: auto;
 
   &::before,
   &::after {
@@ -85,5 +83,39 @@
   &:active::before,
   &:active::after {
     background-color: fade(#ffffff, 30%);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  position: static;
+}
+
+.main-nav--nojs .main-nav__toggle::after {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__toggle::before {
+  display: none;
+}
+
+.main-nav--opened .main-nav__list {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    min-height: 56px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    background-color: transparent;
+  }
+}
+
+.main-nav--closed {
+  @media (max-width: @mobile-width-only) {
+    z-index: 2;
   }
 }

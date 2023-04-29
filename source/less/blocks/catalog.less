@@ -47,7 +47,8 @@
 
 
 .catalog__item {
-  width: 100%;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 24px 0 10px;
   border-bottom: 1px solid #e5e5e5;
 
@@ -128,6 +129,22 @@
   padding: 0;
   font-weight: 400;
   text-transform: none;
+}
+
+.catalog__favorite {
+  width: 38px;
+  height: 44px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  background-image: url(../img/svg/like-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .catalog__like {

@@ -138,7 +138,7 @@
   border: 0;
   cursor: pointer;
   outline: 0;
-  background-image: url(../img/svg/like-icon.svg);
+  background-image: url("../img/svg/like-icon.svg");
   background-repeat: no-repeat;
   background-position: center left;
 
@@ -157,13 +157,17 @@
 
 .catalog__video {
   width: 100%;
+  padding: 40px 20px 50px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 55px 20px 50px;
+  }
 }
 
 .catalog__video-intro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  margin: 0 auto;
+  width: 260px;
 
   @media (min-width: @tablet-width) {
     width: 445px;
@@ -176,12 +180,16 @@
 }
 
 .catalog__video-title {
-  margin: 0 0 36px;
+  margin: 0 auto 36px;
   font-weight: 700;
   font-size: 18px;
+  text-align: center;
 }
 
 .catalog__video-description {
   margin: 0;
+  padding: 0;
+  display: block;
   font-weight: 400;
+  text-align: center;
 }

@@ -47,7 +47,6 @@
   }
 }
 
-
 .main-nav--closed .main-nav__toggle::before {
   background-color: #81b3d2;
   content: "";
@@ -137,6 +136,22 @@
 
 .main-nav--nojs {
   position: relative;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    z-index: 0;
+  }
+}
+
+.main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: grid;
+  }
+}
+
+.main-nav--nojs .main-nav__list {
+  display: grid;
+  z-index: 0;
 }
 
 .main-nav--opened {

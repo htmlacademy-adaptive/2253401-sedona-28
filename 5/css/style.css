@@ -209,6 +209,21 @@ html {
 }
 .main-nav--nojs {
   position: relative;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .main-nav--nojs {
+    z-index: 0;
+  }
+}
+@media (max-width: 767px) {
+  .main-nav__list {
+    display: grid;
+  }
+}
+.main-nav--nojs .main-nav__list {
+  display: grid;
+  z-index: 0;
 }
 @media (max-width: 767px) {
   .main-nav--opened {

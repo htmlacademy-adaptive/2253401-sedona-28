@@ -60,7 +60,7 @@ html {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main-welcome {
-    background-image: url("../img/svg/intro-triangle.svg"), url("../../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/svg/intro-triangle.svg"), url("../img/index-background-mobile@2x.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -72,17 +72,17 @@ html {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .main-welcome {
-    background-image: url("../img/svg/intro-triangle.svg"), url("../../img/index-background-tablet@2x.jpg");
+    background-image: url("../img/svg/intro-triangle.svg"), url("../img/index-background-tablet@2x.jpg");
   }
 }
 @media (min-width: 768px) and (min-width: 1280px) {
   .main-welcome {
-    background-image: url("../img/svg/intro-triangle.svg"), url("../../img/index-background-desktop.jpg");
+    background-image: url("../img/svg/intro-triangle.svg"), url("../img/index-background-desktop.jpg");
   }
 }
 @media (min-width: 768px) and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-width: 1280px) and (min-resolution: 2dppx) {
   .main-welcome {
-    background-image: url("../img/svg/intro-triangle.svg"), url("../../img/index-background-desktop@2x.jpg");
+    background-image: url("../img/svg/intro-triangle.svg"), url("../img/index-background-desktop@2x.jpg");
   }
 }
 .main-welcome__wrapper {

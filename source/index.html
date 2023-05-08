@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -58,17 +62,23 @@
       </div>
       <ol class="advantages__list">
         <li class="advantages__item advantages__item--background">
-          <div class="advantages__division advantages__division--background">
+          <div class="advantages__extended">
+          <div class="advantages__division advantages__division--background advantages__division--triangle">
             <h3 class="advantages__title advantages__title--subtitle">Настоящий городок</h3>
             <!--вставить cётчик через css counter-reset-->
             <p class="advantages__description">Седона — не аттракцион для туристов,
               там течёт своя жизнь</p>
           </div>
           <div class="advantages__image">
-            <img class="advantages__picture" src="img/house-advantages.jpg" width="320" height="260"
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/house-advantages-desktop@1x.jpg 1x, img/house-advantages-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/house-advantages-tablet@1x.jpg 1x, img/house-advantages-tablet@2x.jpg 2x">
+            <img class="advantages__picture" src="img/house-advantages-mobile.jpg" srcset="img/house-advantages-mobile@2x.jpg 2x" width="320" height="260"
               alt="Вид на здания в городе Седона.">
+            </picture>
           </div>
-          <div class="services">
+        </div>
+          <div class="advantages-services services ">
             <div class="services__wrapper">
               <ul class="services__list">
                 <li class="services__item services__item--house">
@@ -88,34 +98,38 @@
             </div>
           </div>
         </li>
-        <li class="advantages__item advantages__item--background">
+        <li class="advantages__item advantages__item--background advantages__item--background-reverse">
+          <div class="advantages__image">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/mountain-advantages-desktop@1x.jpg 1x, img/mountain-advantages-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/mountain-advantages-tablet@1x.jpg 1x, img/mountain-advantages-tablet@2x.jpg 2x">
+            <img class="advantages__picture" src="img/mountain-advantages.jpg" srcset="img/mountain-advantages@2x.jpg" width="320" height="260"
+              alt="Вид на здания в городе Седона.">
+            </picture>
+          </div>
           <div class="advantages__division advantages__division--background">
             <h3 class="advantages__title advantages__title--subtitle">Там есть<br> мост дьявола</h3>
             <!--вставить cётчик через css counter-reset-->
             <p class="advantages__description">Да, по нему можно пройти! Если вы
               осмелитесь, разумеется</p>
           </div>
-          <div class="advantages__image">
-            <img class="advantages__picture" src="img/mountain-advantages.jpg" width="320" height="260"
-              alt="Вид на здания в городе Седона.">
-          </div>
         </li>
-        <li class="advantages__item">
-          <div class="advantages__division">
+        <li class="advantages__item advantages__item--base">
+          <div class="advantages__division advantages__division--base">
             <h3 class="advantages__title">Небольшая<br> площадь</h3>
             <!--вставить cётчик через css counter-reset-->
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </div>
         </li>
-        <li class="advantages__item">
-          <div class="advantages__division">
+        <li class="advantages__item advantages--alternate advantages__item--base">
+          <div class="advantages__division advantages__division--base">
             <h3 class="advantages__title">Красивая<br> дорога</h3>
             <!--вставить cётчик через css counter-reset-->
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
-        <li class="advantages__item">
-          <div class="advantages__division">
+        <li class="advantages__item advantages__item--base">
+          <div class="advantages__division advantages__division--base">
             <h3 class="advantages__title">Мало<br> туристов</h3>
             <!--вставить cётчик через css counter-reset-->
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>

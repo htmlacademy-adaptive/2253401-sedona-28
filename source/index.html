@@ -65,12 +65,15 @@
           <div class="advantages__extended">
           <div class="advantages__division advantages__division--background advantages__division--triangle">
             <h3 class="advantages__title advantages__title--subtitle">Настоящий городок</h3>
-            <!--вставить cётчик через css counter-reset-->
+            <p class="advantages__number">—&nbsp;№&nbsp;1 —</p>
             <p class="advantages__description">Седона — не аттракцион для туристов,
               там течёт своя жизнь</p>
           </div>
           <div class="advantages__image">
             <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="img/house-advantages-desktop@1x.webp 1x, img/house-advantages-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/house-advantages-tablet@1x.webp 1x, img/house-advantages-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/house-advantages-mobile.webp 1x, img/house-advantages-mobile@2x.webp 2x">
               <source media="(min-width: 1280px)" srcset="img/house-advantages-desktop@1x.jpg 1x, img/house-advantages-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/house-advantages-tablet@1x.jpg 1x, img/house-advantages-tablet@2x.jpg 2x">
             <img class="advantages__picture" src="img/house-advantages-mobile.jpg" srcset="img/house-advantages-mobile@2x.jpg 2x" width="320" height="260"
@@ -87,12 +90,12 @@
                 </li>
                 <li class="services__item services__item--food">
                   <h3 class="services__title">Еда</h3>
-                  <p class="services__description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!
+                  <p class="services__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                   </p>
                 </li>
                 <li class="services__item services__item--souvenirs">
                   <h3 class="services__title">Сувениры</h3>
-                  <p class="services__description">Не только китайского,<br>но и настоящего местного производства!</p>
+                  <p class="services__description">Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </div>
@@ -109,30 +112,30 @@
           </div>
           <div class="advantages__division advantages__division--background">
             <h3 class="advantages__title advantages__title--subtitle">Там есть<br> мост дьявола</h3>
-            <!--вставить cётчик через css counter-reset-->
+            <p class="advantages__number">—&nbsp;№&nbsp;2 —</p>
             <p class="advantages__description">Да, по нему можно пройти! Если вы
               осмелитесь, разумеется</p>
           </div>
         </li>
         <li class="advantages__item advantages__item--base">
           <div class="advantages__division advantages__division--base">
-            <h3 class="advantages__title">Небольшая<br> площадь</h3>
-            <!--вставить cётчик через css counter-reset-->
-            <p class="advantages__description">Все интересные места находятся очень близко</p>
+            <h3 class="advantages__title advantages__title--subtitle">Небольшая<br> площадь</h3>
+            <p class="advantages__number">—&nbsp;№&nbsp;3 —</p>
+            <p class="advantages__description">Все интересные места находятся<br> очень близко</p>
           </div>
         </li>
         <li class="advantages__item advantages--alternate advantages__item--base">
           <div class="advantages__division advantages__division--base">
-            <h3 class="advantages__title">Красивая<br> дорога</h3>
-            <!--вставить cётчик через css counter-reset-->
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="advantages__title advantages__title--subtitle">Красивая<br> дорога</h3>
+            <p class="advantages__number">—&nbsp;№&nbsp;4 —</p>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
           </div>
         </li>
         <li class="advantages__item advantages__item--base">
           <div class="advantages__division advantages__division--base">
-            <h3 class="advantages__title">Мало<br> туристов</h3>
-            <!--вставить cётчик через css counter-reset-->
-            <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+            <h3 class="advantages__title advantages__title--subtitle">Мало<br> туристов</h3>
+            <p class="advantages__number">—&nbsp;№&nbsp;5 —</p>
+            <p class="advantages__description">Большинство едет в Гранд Каньон<br> и толпится там</p>
           </div>
         </li>
       </ol>
@@ -142,7 +145,7 @@
       <h2 class="booking__title">Заинтересовались?</h2>
       <p class="booking__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц
         в Седоне</p>
-      <a class="booking__search-hotel button" href="#">Найти гостиницу</a>
+      <a class="button booking__search-hotel" href="#">Найти гостиницу</a>
     </div>
     </section>
     <section class="map">
@@ -180,7 +183,9 @@
       <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Логотип HTML Academy.</span>
-        <svg class="copyright-logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"><path fill="#000" d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
+        <svg class="copyright-logo" width="27" height="35">
+          <use xlink:href="img/sprite.svg#copyright-logo"></use>
+        </svg>
       </a>
     </p>
   </footer>

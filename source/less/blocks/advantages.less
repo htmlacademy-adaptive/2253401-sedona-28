@@ -1,6 +1,4 @@
 .advantages {
-  margin-top: 32px;
-
   @media (min-width: @desktop-width) {
     margin-top: 60px;
   }
@@ -9,7 +7,7 @@
 .advantages__wrapper {
   width: 260px;
   margin: 0 auto;
-  padding: 32px 18px 53px;
+  padding: 32px 18px 16px;
 
   @media (min-width: @tablet-width) {
     width: 520px;
@@ -44,7 +42,7 @@
 }
 
 .advantages__title--subtitle {
-  margin: 0 auto 49px;
+  margin: 0 auto 10px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto 60px;
@@ -65,6 +63,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: list1;
 
   @media (max-width: @mobile-width-only) {
     flex-direction: column;
@@ -122,7 +121,7 @@
 .advantages__division {
   width: 284px;
   margin: 0;
-  padding: 37px 18px 36px;
+  padding: 37px 18px;
   position: relative;
   background-color: #eeeeee;
 
@@ -143,7 +142,7 @@
 }
 
 .advantages__division--triangle {
-  padding-top: 70px;
+  padding-top: 69px;
   padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
@@ -174,7 +173,7 @@
 
 .advantages__division--base {
   position: relative;
-  padding: 25px 18px 27px;
+  padding: 25px 18px;
 
   @media (min-width: @tablet-width) {
     padding: 41px 33px 63px;
@@ -229,4 +228,8 @@
     height: 100%;
     object-fit: cover;
   }
+}
+
+.advantages__number {
+  margin: 0 0 17px;
 }

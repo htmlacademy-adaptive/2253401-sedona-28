@@ -74,10 +74,12 @@
               <p class="catalog__name">Неродные просторы</p>
               <p class="catalog__author">Автор фото: Борис</p>
             </div>
+            <div class="catalog__favorite-wrap">
               <button class="catalog__favorite" type="button">
                 <span class="visually-hidden">Поставить лайк фотографии.</span>
               </button>
               <p class="catalog__like">1350</p>
+            </div>
             </div>
           </li>
           <li class="catalog__item">
@@ -94,10 +96,12 @@
               <p class="catalog__name">Местная растительность</p>
               <p class="catalog__author">Автор фото: Сергей</p>
               </div>
+              <div class="catalog__favorite-wrap">
               <button class="catalog__favorite" type="button">
                 <span class="visually-hidden">Поставить лайк фотографии.</span>
               </button>
               <p class="catalog__like">143</p>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
@@ -114,10 +118,12 @@
               <p class="catalog__name">Дорога на север</p>
               <p class="catalog__author">Автор фото: Петр</p>
               </div>
+              <div class="catalog__favorite-wrap">
               <button class="catalog__favorite" type="button">
                 <span class="visually-hidden">Поставить лайк фотографии.</span>
               </button>
               <p class="catalog__like">96</p>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
@@ -134,9 +140,11 @@
               <p class="catalog__name">Мост дьявола</p>
               <p class="catalog__author">Автор фото: Антон</p>
               </div>
+              <div class="catalog__favorite-wrap">
               <button class="catalog__favorite" type="button">
                 <span class="visually-hidden">Поставить лайк фотографии.</span></button>
               <p class="catalog__like">254</p>
+              </div>
             </div>
           </li>
         </ul>
@@ -148,7 +156,17 @@
             подорожали в очередной раз!</p>
         </div>
         <div class="catalog__video-play">
-          <!--Здесь будет видео-->
+          <picture>
+            <source media="(min-width: 769px)"
+              srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x" width="1200" height="400">
+            <source media="(min-width: 321px) and (max-width: 768px)"
+              srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" width="648" height="400">
+            <img class="catalog-video__picture" src="img/video-mobile.jpg"
+              srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация.">
+          </picture>
+          <button class="catalog__video__button" type="button">
+            <span class="visually-hidden">Включить видео.</span>
+          </button>
         </div>
       </div>
     </section>

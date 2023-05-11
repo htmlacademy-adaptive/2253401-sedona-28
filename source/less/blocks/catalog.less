@@ -1,5 +1,9 @@
 .catalog__intro {
   text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px 36px;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     padding: 66px 155px 67px;
@@ -11,9 +15,9 @@
 }
 
 .catalog__title {
-  margin: 0 auto;
+  margin: 0 auto 25px;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 35px;
@@ -25,7 +29,7 @@
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .catalog__list {
@@ -48,7 +52,7 @@
 .catalog__item {
   width: 280px;
   margin: 0 auto;
-  padding-top: 24px 0 10px;
+  padding: 25px 0 10px;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
@@ -110,8 +114,14 @@
   }
 }
 
+.catalog__favorite-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .catalog__text {
-  padding: 0 0 16px 20px;
+  padding-bottom: 3px;
 
   @media (min-width: @desktop-width) {
     color: #ffffff;
@@ -156,12 +166,16 @@
 
 .catalog__video {
   width: 100%;
-  padding: 40px 20px 50px;
+  padding: 16px 20px 0;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     padding: 55px 20px 50px;
   }
+}
+
+.catalog__video-play {
+  position: relative;
 }
 
 .catalog__video-intro {
@@ -179,16 +193,32 @@
 }
 
 .catalog__video-title {
-  margin: 0 auto 36px;
+  margin: 0 auto 27px;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
 }
 
 .catalog__video-description {
-  margin: 0;
+  margin: 0 0 38px;
   padding: 0;
   display: block;
   font-weight: 400;
   text-align: center;
+}
+
+.catalog__video__button {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 54px;
+  border: none;
+  background-image: url("../img/play-video-icon.png");
+  background-repeat: no-repeat;
+  background-size: 48px 54px;
+  background-position: center center;
+  background-color: transparent;
 }

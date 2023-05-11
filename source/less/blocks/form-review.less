@@ -1,5 +1,5 @@
 .form-review {
-  padding: 0 20px 50px;
+  padding: 0 20px 32px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -13,21 +13,14 @@
 }
 
 .form-review__group {
+  position: relative;
   margin: 0;
   padding: 0 0 40px;
   border: none;
-
-  @media (min-width: @tablet-width) {
-    width: 280px;
-  }
 }
 
 .form-review__group:not(:first-child) {
   padding-bottom: 35px;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 34px;
-  }
 }
 
 .form-review__group:nth-child(4) {
@@ -40,29 +33,31 @@
   }
 }
 
+.form-review__group::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .form-review__group:first-child {
   @media (min-width: @tablet-width) {
-    margin: 0 64px 63px 0;
-    padding-bottom: 13px;
+    margin: 0 44px 48px 0;
+    padding: 0 43px 13px 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 64px 63px 0;
-    padding-bottom: 0;
+    margin: 0 64px 69px 0;
+    padding: 0 63px 0 0;
   }
-}
-
-.form-review__list {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-}
-
-.form-review__item {
-  display: flex;
-  flex-direction: column;
 }
 
 .form-review__input {
@@ -73,6 +68,7 @@
   font-weight: 700;
   font-family: inherit;
   font-size: 18px;
+  line-height: 26px;
 
   @media (min-width: @tablet-width) {
     width: 263px;
@@ -88,6 +84,30 @@
     font-size: 18px;
     color: fade(@black, 30%);
   }
+}
+
+.form-review__input:hover {
+  background-color: #e5e5e5;
+}
+
+.form-review__input:focus {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+  outline-offset: -4px;
+}
+
+.form-review__input--phone {
+  @media (min-width: @desktop-width) {
+    width: 402px;
+  }
+}
+
+.form-review__input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  z-index: 1;
 }
 
 .form-review__textarea {

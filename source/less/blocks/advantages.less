@@ -11,7 +11,7 @@
 
   @media (min-width: @tablet-width) {
     width: 520px;
-    padding: 48px 124px 59px;
+    padding: 46px 124px 57px;
 
     @media (min-width: @desktop-width) {
       padding: 59px 359px 44px 357px;
@@ -27,7 +27,11 @@
   font-size: 18px;
 
   @media (min-width: @tablet-width) {
-    //
+    max-width: 520px;
+    margin: 0 0 28px;
+    padding: 0;
+    font-size: 21px;
+    line-height: 27px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,7 +49,7 @@
   margin: 0 auto 10px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto 60px;
+    margin: 0 auto 12px;
   }
 }
 
@@ -176,7 +180,22 @@
   padding: 25px 18px;
 
   @media (min-width: @tablet-width) {
-    padding: 41px 33px 63px;
+    padding: 41px 33px 64px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 50px;
+  }
+}
+
+.advantages__division--alternate {
+  position: relative;
+  padding: 25px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 41px 33px 43px;
     display: flex;
     flex-direction: column;
   }
@@ -200,11 +219,46 @@
   }
 }
 
+.advantages__item--base .advantages__description br {
+  display: initial;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.advantages__item--base:nth-child(4) .advantages__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
+}
+
 .advantages__description {
   margin: 0;
   padding: 0;
   font-weight: 400;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+
+.advantages__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
+}
+
+.advantages__description--base {
+  @media (max-width: @mobile-width-only) {
+    padding: 0 15px 0;
+  }
 }
 
 .advantages__image {
@@ -232,4 +286,12 @@
 
 .advantages__number {
   margin: 0 0 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 13px;
+  }
 }

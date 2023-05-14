@@ -29,16 +29,23 @@
       margin-top: 0;
       padding: 156px 0 0 0;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 0;
+      padding: 165px 0 0 0;
+    }
   }
 
   &:last-of-type {
-    margin-bottom: 65px;
-    padding: 150px 0 0 0;
+    margin-bottom: 44px;
   }
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
+    margin-bottom: 65px;
+    padding: 150px 0 0 0;
   }
+
 
   &::before {
     content: "";
@@ -64,7 +71,7 @@
   @media (min-width: @tablet-width) {
     width: 256px;
     box-sizing: border-box;
-    margin-bottom: 55px;
+    margin-bottom: 59px;
     padding: 153px 0 0 0;
     text-align: center;
   }
@@ -72,6 +79,7 @@
   @media (min-width: @desktop-width) {
     width: 400px;
     padding: 170px 0 0 0;
+    margin-bottom: 71px;
   }
 }
 
@@ -82,6 +90,16 @@
   @media (min-width: @tablet-width) {
     background-size: 75px 72px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px;
+  }
+}
+
+.services__item--food {
+  @media (min-width: @desktop-width) {
+    padding: 165px 0 0 0;
+  }
 }
 
 .services__item--food::before {
@@ -91,6 +109,10 @@
   @media (min-width: @tablet-width) {
     background-size: 77px 68px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px;
+  }
 }
 
 .services__item--souvenirs::before {
@@ -99,6 +121,10 @@
 
   @media (min-width: @tablet-width) {
     background-size: 64px 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px;
   }
 }
 
@@ -117,15 +143,20 @@
 }
 
 .services__description {
-  width: 232px;
-  display: block;
   margin: 0;
+  padding: 0;
   text-align: left;
   font-weight: 400;
 
   @media (min-width: @tablet-width) {
+    width: 190px;
     margin: 0 auto;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    margin: 0 auto;
   }
 }
 

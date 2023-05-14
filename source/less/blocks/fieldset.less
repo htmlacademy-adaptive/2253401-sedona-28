@@ -6,21 +6,7 @@
 
 .fieldset:first-child .fieldset__title {
   @media (min-width: @tablet-width) {
-    padding-left: 42px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 61px;
-  }
-}
-
-.fieldset:nth-child(2) .fieldset__title {
-  @media (min-width: @tablet-width) {
-    margin-left: -19px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: -32px;
+    padding-left: 0;
   }
 }
 
@@ -55,7 +41,11 @@
   margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 15px;
   }
 }
 
@@ -109,7 +99,7 @@
   margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }
 
@@ -117,19 +107,20 @@
   margin-bottom: 22px;
   padding-left: 0;
   padding-right: 0;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    width: fit-content;
+    margin: 0 auto 35px;
+    padding: 0 65px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 56px 0 47px;
+    margin-bottom: 52px;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  background-color: #ffffff;
-  width: fit-content;
-  margin: 0 auto 31px;
-  padding: 0 65px 0;
-}
-
-@media (min-width: @desktop-width) {
-  padding: 0 56px 0 65px;
-  margin-bottom: 48px;
-}
 
 .fieldset__title--radio::before {
   @media (min-width: @tablet-width) {
@@ -212,8 +203,7 @@
   @media (min-width: @tablet-width) {
     width: fit-content;
     margin: 0 auto;
-    padding-left: 63px;
-    padding-right: 63px;
+    padding: 23px 63px 0;
     background-color: #ffffff;
   }
 

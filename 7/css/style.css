@@ -917,10 +917,24 @@ html {
   position: relative;
   background-color: #81b3d2;
 }
+.social__item:hover {
+  background-color: #669ec0;
+}
+.social__item:focus-visible {
+  outline: none;
+}
+.social__item:active {
+  background-color: #5496bd;
+  outline: none;
+}
 .social__link {
   display: block;
   width: 46px;
   height: 48px;
+  cursor: pointer;
+}
+.social__link:active {
+  opacity: 0.3;
 }
 .social__link::before {
   content: "";

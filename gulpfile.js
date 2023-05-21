@@ -8,7 +8,6 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import {deleteAsync} from 'del';
@@ -68,7 +67,7 @@ const createWebp = () => {
 //SVG
 
 const svg = () => {
-gulp.src('source/img/**/*.svg', 'source/img/svg/*.svg', '!source/img/icons/*.svg')
+return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 }
@@ -138,10 +137,10 @@ export const build = gulp.series(
   gulp.parallel(
     html,
     scripts,
-    svg,
     styles,
-    makeStack,
     createWebp,
+    svg,
+    makeStack,
   ),
 );
 
@@ -154,10 +153,10 @@ export default gulp.series(
   gulp.parallel(
     html,
     scripts,
-    svg,
     styles,
-    makeStack,
     createWebp,
+    svg,
+    makeStack,
   ),
 gulp.series(
   server,

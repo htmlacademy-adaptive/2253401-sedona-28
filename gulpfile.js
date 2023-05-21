@@ -12,6 +12,7 @@ import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import {deleteAsync} from 'del';
+import {stacksvg} from 'gulp-stacksvg';
 
 // Styles
 
@@ -66,19 +67,17 @@ const createWebp = () => {
 
 //SVG
 
-const svg = () =>
-gulp.src('source/img/*.svg', 'source/img/svg/*.svg', '!source/img/icons/*.svg')
+const svg = () => {
+gulp.src('source/img/**/*.svg', 'source/img/svg/*.svg', '!source/img/icons/*.svg')
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
+}
 
-const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
-  .pipe(svgo())
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'))
+const makeStack = () => {
+  return gulp.src('source/img/icons/**/*.svg')
+    .pipe(svgo())
+    .pipe(stacksvg())
+    .pipe(gulp.dest('build/img'));
 }
 
 //Copy
@@ -141,7 +140,7 @@ export const build = gulp.series(
     scripts,
     svg,
     styles,
-    sprite,
+    makeStack,
     createWebp,
   ),
 );
@@ -157,7 +156,7 @@ export default gulp.series(
     scripts,
     svg,
     styles,
-    sprite,
+    makeStack,
     createWebp,
   ),
 gulp.series(

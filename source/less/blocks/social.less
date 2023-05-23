@@ -1,6 +1,6 @@
 .social {
-  width: 151px;
-  margin: 0 auto 30px;
+  width: 154px;
+  margin: 0 auto 29px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -19,12 +19,32 @@
 .social__item {
   position: relative;
   background-color: #81b3d2;
+
+  &:hover {
+    outline: none;
+    background-color: #669ec0;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    outline: none;
+  }
 }
 
 .social__link {
   display: block;
   width: 46px;
   height: 48px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
 }
 
 .social__link::before {
@@ -40,15 +60,15 @@
 
 .social__link--vkontakte::before {
   background-image: url("../img/svg/vk-icon.svg");
-  background-size: 18px 16px;
+  background-size: 24px 14px;
 }
 
 .social__link--telegram::before {
   background-image: url("../img/svg/telegram-icon.svg");
-  background-size: 18px 16px;
+  background-size: 21px 18px;
 }
 
 .social__link--youtube::before {
   background-image: url("../img/svg/youtube-icon.svg");
-  background-size: 18px 16px;
+  background-size: 20px 14px;
 }

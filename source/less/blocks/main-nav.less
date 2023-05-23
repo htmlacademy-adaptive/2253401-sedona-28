@@ -74,9 +74,13 @@
   @media (min-width: @tablet-width) {
     min-height: 56px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 183px 1fr 227px 1fr;
     align-items: center;
     background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -86,7 +90,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  right: 20px;
+  right: 18px;
   top: 17px;
   background-color: rgba(0, 0, 0, 0);
 
@@ -157,5 +161,12 @@
 .main-nav--opened {
   @media (max-width: @mobile-width-only) {
     z-index: 3;
+  }
+}
+
+.main-nav__link {
+  @media (max-width: @mobile-width-only) {
+    padding: 10px 55px 10px 52px;
+    font-size: 18px;
   }
 }

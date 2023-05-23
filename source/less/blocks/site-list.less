@@ -3,20 +3,12 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-
-  @media (min-width: @tablet-width) {
-    min-height: 56px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    background-color: transparent;
-  }
 }
 
 .site-list a {
   display: block;
   padding-top: 17px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -25,16 +17,19 @@
   border-top: 1px solid #9ac2db;
 
   &:hover {
-    color: #81b3d2;
+    background-color: #669ec0;
   }
 
   &:active {
+    background-color: #5496bd;
     color: fade(#ffffff, 30%);
   }
 
   @media (min-width: @tablet-width) {
     color: #000000;
     border: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
   }
 }
 
@@ -44,7 +39,7 @@
 
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
-    margin-right: 77px;
+    margin-right: 74px;
 
     @media (min-width: @desktop-width) {
       margin-right: 163px;
@@ -65,11 +60,15 @@
     &:nth-child(3) {
       margin-left: auto;
       margin-right: 0;
+
+      @media (min-width: @desktop-width) {
+        margin-right: 12px;
+      }
     }
 
     &:nth-child(4) {
       margin-left: auto;
-      margin-right: 27px;
+      margin-right: 29px;
 
       @media (min-width: @desktop-width) {
         margin-right: 71px;

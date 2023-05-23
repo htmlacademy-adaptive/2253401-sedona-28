@@ -1,41 +1,55 @@
 .booking {
   box-sizing: border-box;
   width: 100%;
-  padding: 40px 20px 0;
+  padding: 38px 20px 0;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding: 55px 20px 50px;
+    padding: 50px 20px 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 20px 63px;
   }
 }
 
 .booking__wrapper {
-  width: 260px;
-  margin: 0 auto;
-
   @media (min-width: @tablet-width) {
-    width: 520px;
+    width: 460px;
+    margin: 0 auto;
   }
 }
 
 .booking__title {
-  margin: 0 0 30px;
+  margin: 0 0 18px;
   font-weight: 700;
   font-size: 21px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 38px;
+    margin: 0 0 23px;
+    font-size: 30px;
   }
 }
 
 .booking__description {
+  margin: 0 auto;
   font-weight: 400;
 }
 
-.booking__search-hotel {
-  margin: 40px 0 49px;
+.booking__description br {
+  display: none;
 
   @media (min-width: @tablet-width) {
-    margin: 40px 0 49px;
+    display: initial;
+  }
+}
+
+.booking__search-hotel {
+  margin: 27px 0 49px;
+  padding: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin: 43px 0 2px;
+    padding: 16px;
   }
 }

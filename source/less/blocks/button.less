@@ -1,8 +1,8 @@
 .button {
-  padding: 18px;
   display: block;
   box-sizing: border-box;
   font-family: inherit;
+  font-size: 21px;
   text-align: center;
   font-weight: 700;
   color: #ffffff;
@@ -17,8 +17,16 @@
     background-color: #669ec0;
   }
 
+  &:focus {
+    border: 1px solid #17314b;
+  }
+
   &:active {
     background-color: #5496bd;
     color: fade(#ffffff, 30%);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }

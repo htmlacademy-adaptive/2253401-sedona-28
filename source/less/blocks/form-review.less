@@ -36,12 +36,12 @@
 .form-review__group::after {
   content: "";
   position: absolute;
-  width: 320px;
-  height: 1px;
-  background-color: #e5e5e5;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -64,12 +64,12 @@
 .form-review__input {
   width: 248px;
   padding: 16px 16px 16px 16px;
-  background-color: @grey;
-  border: none;
-  font-weight: 700;
-  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: @grey;
+  border: none;
 
   @media (min-width: @tablet-width) {
     width: 263px;
@@ -104,8 +104,8 @@
 }
 
 .form-review__input--phone::placeholder {
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   color: fade(@black, 30%);
 }
 
@@ -133,9 +133,9 @@
   text-align: right;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {

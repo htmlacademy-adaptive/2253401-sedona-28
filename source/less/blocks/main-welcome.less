@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 320px;
+  width: 320px;
   height: 389px;
+  margin: 0 auto;
   color: @black;
   background-color: #3287d1;
   background-image: url("../img/svg/intro-triangle.svg"), url("../img/index-background-mobile@1x.jpg");
@@ -16,6 +17,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    width: 768px;
     height: 518px;
     background-image: url("../img/svg/intro-triangle.svg"), url("../img/index-background-tablet@1x.jpg");
     background-size: 156% auto, cover;
@@ -25,6 +27,7 @@
     }
 
     @media (min-width: @desktop-width) {
+      width: 1200px;
       background-image: url("../img/svg/intro-triangle.svg"), url("../img/index-background-desktop@1x.jpg");
       background-size: 100% auto, cover;
 

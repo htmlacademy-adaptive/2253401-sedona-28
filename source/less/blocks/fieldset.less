@@ -1,7 +1,5 @@
 .fieldset {
-  @media (min-width: @tablet-width) {
-    width: 280px;
-  }
+  width: 280px;
 }
 
 .fieldset:first-child .fieldset__title {
@@ -155,6 +153,8 @@
 }
 
 .fieldset__list--showplace {
+  padding: 22px 0 0;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -192,6 +192,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 40px;
+    padding-left: 23px;
   }
 }
 
@@ -209,7 +210,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 47px;
-    padding: 11px 63px 0;
+    padding: 12px 63px 0;
   }
 }
 

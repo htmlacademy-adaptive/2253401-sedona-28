@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -176,15 +178,27 @@
       <h2 class="visually-hidden">Социальные сети.</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          <a class="social__icon" href="https://vk.com/htmlacademy" aria-label="Вконтакте">
+            <svg class="social__link social__link--vkontakte" width="24" height="24">
+              <use xlink:href="img/stack.svg#vk-icon"></use>
+            </svg>
+          </a>
           <span class="visually-hidden">ВКонтакте.</span>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+          <a class="social__icon" href="https://t.me/htmlacademy" aria-label="Телеграм">
+            <svg class="social__link social__link--telegram" width="24" height="24">
+              <use xlink:href="img/stack.svg#telegram-icon"></use>
+            </svg>
+          </a>
           <span class="visually-hidden">Телеграм.</span>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+          <a class="social__icon" href="https://www.youtube.com/user/htmlacademyru" aria-label="Ютуб">
+            <svg class="social__link social__link--youtube" width="24" height="24">
+              <use xlink:href="img/stack.svg#youtube-icon"></use>
+            </svg>
+          </a>
           <span class="visually-hidden">Ютуб.</span>
         </li>
       </ul>

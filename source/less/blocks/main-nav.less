@@ -73,14 +73,11 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 183px 1fr 227px 1fr;
+    grid-template-columns: 1fr 1fr minmax(153px, 1fr) 1fr 1fr;
     align-items: center;
+    width: 100%;
     min-height: 56px;
     background-color: transparent;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

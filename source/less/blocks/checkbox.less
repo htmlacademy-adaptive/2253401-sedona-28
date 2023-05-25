@@ -1,4 +1,5 @@
 .checkbox {
+  display: flex;
   margin-left: 0;
   font-size: 18px;
   font-weight: 700;
@@ -23,6 +24,10 @@
   font-weight: 700;
   text-transform: none;
   cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 64px;
+  }
 }
 
 .checkbox__text::before {

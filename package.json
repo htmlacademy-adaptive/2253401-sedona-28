@@ -28,11 +28,11 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [
-    "last 2 versions",
+    "last 5 versions",
     "not dead",
     "not ie <= 11",
     "not op_mini all",

@@ -43,8 +43,13 @@
 
 .map__marker {
   position: absolute;
-  top: 47%;
+  top: 50%;
   transform: translateY(-50%);
-  right: 20px;
+  right: 46%;
+  display: block;
   z-index: 1;
+
+  @media (min-width: @desktop-width) {
+    right: 49%;
+  }
 }

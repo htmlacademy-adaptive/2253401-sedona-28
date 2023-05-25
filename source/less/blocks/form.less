@@ -1,3 +1,16 @@
+.form {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
 .form-review {
   padding: 0 20px 56px;
 
@@ -84,6 +97,13 @@
     font-weight: 700;
     font-size: 18px;
     color: #000000;
+  }
+
+  &::-moz-placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+    opacity: 1;
   }
 }
 

@@ -1,14 +1,41 @@
 .map {
+  position: relative;
+  width: 320px;
   height: 350px;
-  margin-bottom: 32px;
+  margin: 0 auto 32px auto;
 
   @media (min-width: @tablet-width) {
+    width: 768px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
   }
 }
 
 .map__sedona {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
+  height: auto;
+  min-height: 350px;
+  margin: 0 auto;
   border: none;
+}
+
+.map__picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 100%;
+  min-height: 350px;
+  transform: translate(-50%, -50%);
+}
+
+.map__image {
+  display: block;
+  width: 100%;
 }
